@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- icon -->
+    <!-- ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- ICON -->
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;600;700;800&family=Rubik:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font -->
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md py-2 position-fixed w-100">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="https://i.ibb.co/FzRc6JC/logo-primary.png"
+            alt="logo-primary"
+            width="100"
+        /></a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#btn-navbar"
+        >
+          <i class="bx bx-menu fs-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="btn-navbar">
+          <ul class="navbar-nav gap-lg-4 gap-3 mt-3 mt-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Diet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Edukasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div
+            class="col py-lg-0 py-3 sign d-flex justify-content-lg-end justify-content-start align-items-center gap-2"
+          >
+            <a href="">
+              <i class="bx bxs-user-circle" id="user"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- hero -->
+    <section class="hero">
+      <div class="container">
+        <div
+          class="hero-wrapper row align-items-center flex-lg-row flex-column-reverse"
+        >
+          <div class="col-md-6 col-sm-12 left">
+            <h1 class="fw-bold mt-lg-0 mt-3" id="title">
+              Ayo Ubah Gaya Hidupmu
+            </h1>
+            <p id="description" class="mb-lg-5 mb-4 mt-lg-3 mt-0">
+              Investasi terbaik adalah kesehatan diri kita. Mulailah menerapkan
+              gaya hidup sehat dengan diet yang sesuai bagi tubuh kita.
+            </p>
+            <button class="py-2 px-lg-4 px-3 rounded-5 border-0" id="btn-hero">
+              <a
+                href="https://skilvul.com"
+                id="link"
+                class="text-decoration-none text-white fw-semibold"
+                >Cek Kebutuhan Gizi Anda</a
+              >
+              <i class="fa-solid fa-arrow-right text-white ms-2"></i>
+            </button>
+          </div>
+          <div class="col-md-6 col-sm-12 right">
+            <img
+              src="https://i.ibb.co/KwtNJdp/Hero.png"
+              alt="Hero"
+              width="100%"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero -->
+
+    <!-- our services -->
+    <section class="services px-lg-0 px-3">
+      <div class="container">
+        <div class="services-wrapper row gap-3 flex-md-row flex-column">
+          <div class="col">
+            <a href="#diet">
+              <i class="fa-solid fa-bowl-food"></i>
+              <h1>Diet Sehat</h1>
+              <p>Memberikan informasi dan dukungan diet yang dibutuhkan.</p>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#makanan">
+              <i class="fa-solid fa-utensils"></i>
+              <h1>Rekomendasi Makanan</h1>
+              <p>Makanan sehat dapat meningkatkan kesehatan tubuh.</p>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#olahraga">
+              <i class="fa-solid fa-dumbbell"></i>
+              <h1>Rekomendasi Olahraga</h1>
+              <p>Olahraga teratur penting untuk kesehatan tubuh.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- our services -->
+    <!-- rekomendasi diet -->
+    <section class="diet">
+      <div class="container">
+        <div class="diet-wrapper" id="diet">
+          <div class="row diet-header mb-lg-5">
+            <div class="text-lg-center text-start">
+              <h1>Pilihan Diet Yang Cocok Dengan Anda</h1>
+              <p>
+                Berbagai jenis diet yang dapat disesuaikan dengan kebutuhanmu
+                untuk mencapai berat badan yang sehat dan memperbaiki pola
+                makanmu. Mari temukan jenis diet yang cocok denganmu dan
+                perbaiki kesehatanmu hari ini!
+              </p>
+            </div>
+          </div>
+          <div class="row content gap-4 mt-lg-0 mt-5">
+            <!-- col start -->
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://i.ibb.co/71zcJ8M/Diet-Mediterania.webp"
+                  alt="Diet-Mediterania"
+                  width="100%"
+                />
+                <div class="text">
+                  <h1>Diet Mediterania</h1>
+                  <p>
+                    Diet ini fokus pada asupan makanan yang tinggi serat,
+                    sayuran, buah-buahan, ikan, dan biji-bijian. Diet ini dapat
+                    membantu mengurangi risiko penyakit jantung, diabetes, dan
+                    kanker. Selain itu, diet Mediterania dapat diadaptasi untuk
+                    vegetaris atau vegan.
+                  </p>
+                  <div class="link">
+                    <a href="">Selengkapnya</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- col end -->
+            <!-- col start -->
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://i.ibb.co/grRmxQ5/Diet-Rendah-Karbohidrat.webp"
+                  alt="Diet-Rendah-Karbohidrat"
+                  width="100%"
+                />
+                <div class="text">
+                  <h1>Diet Rendah Karbohidrat</h1>
+                  <p>
+                    Diet ini melibatkan mengurangi asupan karbohidrat seperti
+                    roti, pasta, dan nasi putih dan meningkatkan asupan protein
+                    dan lemak. Diet rendah karbohidrat dapat membantu menurunkan
+                    berat badan dan meningkatkan kesehatan jantung, tetapi tidak
+                    cocok untuk orang yang aktif secara fisik atau yang
+                    membutuhkan asupan karbohidrat yang tinggi untuk aktivitas
+                    fisiknya.
+                  </p>
+                  <div class="link">
+                    <a href="">Selengkapnya</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- col end -->
+            <!-- col start -->
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://i.ibb.co/QvwrVxd/Diet-Vegetarian-Vegan.webp"
+                  alt="Diet-Vegetarian-Vegan"
+                  width="100%"
+                />
+                <div class="text">
+                  <h1>Diet Vegetarian / Vegan</h1>
+                  <p>
+                    Diet ini melibatkan penghilangan atau pengurangan konsumsi
+                    daging dan produk hewani. Diet ini dapat membantu menurunkan
+                    risiko penyakit jantung, kanker, dan diabetes. Namun, orang
+                    yang mengadopsi diet ini perlu memastikan bahwa mereka
+                    mendapatkan asupan nutrisi yang cukup seperti protein, zat
+                    besi, dan vitamin B12 dari sumber lain.
+                  </p>
+                  <div class="link">
+                    <a href="">Selengkapnya</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- col end -->
+          </div>
+          <div class="btn-diet">
+            <button>Lihat Diet Lainnya</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- rekomendasi diet -->
+    <!-- tentang kami -->
+    <section class="tentang-kami">
+      <div class="container">
+        <div class="row gap-3 align-items-center">
+          <div class="col-lg-4 img">
+            <img
+              src="https://i.ibb.co/c6hsZV7/Pensive-housewife-holds-green-bok.webp"
+              alt="Pensive-housewife-holds-green-bok"
+              id="img-show"
+              width="100%"
+            />
+            <div class="border-img"></div>
+          </div>
+          <div class="col-lg-7 content">
+            <div class="judul">
+              <h1 id="judul" class="mb-0 mb-lg-3">Tentang Diet Care</h1>
+              <h1>
+                Setiap Kita Makan Dan Minum, Kita Dapat Menentukan Dunia Seperti
+                Apa Yang Kita Inginkan
+              </h1>
+              <p>
+                Kami mengajak seluruh masyarakat Indonesia untuk bekerja sama
+                dan berpartisipasi dalam gerakan ini bersama-sama. Sebuah
+                gerakan yang bertujuan untuk mendorong penerapan kebiasaan makan
+                dan minum yang lebih sehat dan berkelanjutan.
+              </p>
+              <button>
+                Lihat Lebih Lanjut
+                <i class="fa-solid fa-arrow-right text-white ms-2"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- tentang kami -->
+    <!-- apa gizi seimbang -->
+    <section class="gizi">
+      <div class="row align-items-center px-2">
+        <div class="text container text-lg-center text-start text-white">
+          <h1>Apa itu Gizi Seimbang?</h1>
+          <p>
+            Gizi seimbang adalah susunan makanan sehari-hari yang mengandung zat
+            gizi dalam jenis dan jumlah yang sesuai dengan kebutuhan tubuh yaitu
+            jenis kelamin, umur dan status kesehatan. Pola makan tidak seimbang
+            meningkatkan risiko kekurangan atau kelebihan gizi yang dapat
+            berdampak negatif pada kesehatan
+          </p>
+          <button>Lihat Lebih Banyak</button>
+        </div>
+      </div>
+    </section>
+    <!-- apa gizi seimbang -->
+
+    <!-- rekomendasi makanan -->
+    <section class="makanan" id="makanan">
+      <div class="container">
+        <div class="makanan-wrapper">
+          <div class="row header-makanan">
+            <div class="col">
+              <h1>Rekomendasi Makanan</h1>
+            </div>
+            <div class="col d-lg-block d-none">
+              <a href="">
+                <div class="lihat-detail">
+                  <h3>Lainnya</h3>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="row content">
+            <!-- col start -->
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://i.ibb.co/r09V9zD/Sayuran-Hijau.webp"
+                  alt="Sayuran-Hijau"
+                  width="100%"
+                />
+                <div class="text">
+                  <h1>Sayuran Hijau</h1>
+                  <p>
+                    Sayuran hijau seperti bayam, kangkung, kubis, dan brokoli
+                    kaya akan serat, vitamin, dan mineral yang sangat penting
+                    bagi tubuh. Sayuran hijau juga mengandung antioksidan yang
+                    dapat membantu melindungi tubuh dari kerusakan sel.
+                  </p>
+                  <div class="link">
+                    <a href="">Selengkapnya</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- col end -->
+            <!-- col start -->
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://i.ibb.co/VN1vbt3/Protein-Tanpa-Lemak.webp"
+                  alt="Protein-Tanpa-Lemak"
+                  width="100%"
+                />
+                <div class="text">
+                  <h1>Protein Tanpa Lemak</h1>
+                  <p>
+                    rotein tanpa lemak seperti ikan, ayam tanpa kulit,
+                    kacang-kacangan, dan kedelai merupakan sumber protein yang
+                    sehat dan bergizi. Protein adalah bahan bangunan utama dalam
+                    tubuh dan juga membantu dalam memperbaiki sel-sel dan
+                    jaringan tubuh.
+                  </p>
+                  <div class="link">
+                    <a href="">Selengkapnya</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- col end -->
+            <!-- col start -->
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://i.ibb.co/WtWSkcv/Gandum-Utuh.webp"
+                  alt="Gandum-Utuh"
+                  width="100%"
+                />
+                <div class="text">
+                  <h1>Gandum Utuh</h1>
+                  <p>
+                    Gandum utuh seperti oatmeal, beras coklat, dan roti gandum
+                    utuh kaya akan serat, vitamin B, zat besi, dan mineral
+                    lainnya. Gandum utuh juga dapat membantu menjaga kadar gula
+                    darah dan meningkatkan kesehatan jantung.
+                  </p>
+                  <div class="link">
+                    <a href="">Selengkapnya</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- col end -->
+          </div>
+          <div class="btn-makanan d-lg-none d-block text-center">
+            <button>Makanan Sehat Lainnya</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- rekomendasi makanan -->
+
+    <!-- rekomendasi olahraga -->
+    <section class="olahraga" id="olahraga">
+      <div class="container">
+        <div class="olahraga-wrapper">
+          <div class="row header-olahraga">
+            <div class="col">
+              <h1>Rekomendasi Olahraga</h1>
+            </div>
+            <div class="col d-lg-block d-none">
+              <a href="">
+                <div class="lihat-detail">
+                  <h3>Lainnya</h3>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="row content">
+            <!-- col start -->
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://i.ibb.co/SKwGhwQ/Jogging.webp"
+                  alt="Jogging"
+                  width="100%"
+                />
+                <div class="text">
+                  <h1>Jogging</h1>
+                  <p>
+                    Olahraga berlari atau jogging adalah olahraga kardiovaskular
+                    yang membakar banyak kalori dan lemak. Olahraga ini dapat
+                    membantu meningkatkan kesehatan jantung dan paru-paru serta
+                    membantu menurunkan berat badan.
+                  </p>
+                  <div class="link">
+                    <div class="link">
+                      <a href="">Selengkapnya</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- col end -->
+            <!-- col start -->
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://i.ibb.co/qJcvJBv/Bersepeda.webp"
+                  alt="Bersepeda"
+                  width="100%"
+                />
+                <div class="text">
+                  <h1>Bersepeda</h1>
+                  <p>
+                    Olahraga bersepeda merupakan olahraga yang menyenangkan dan
+                    efektif dalam membakar kalori. Olahraga ini juga dapat
+                    meningkatkan kekuatan otot kaki dan membantu mengurangi
+                    lemak di area perut.
+                  </p>
+                  <div class="link">
+                    <a href="">Selengkapnya</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- col end -->
+            <!-- col start -->
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://i.ibb.co/K9JKhHG/Yoga.webp"
+                  alt="Yoga"
+                  width="100%"
+                />
+                <div class="text">
+                  <h1>Yoga</h1>
+                  <p>
+                    Yoga adalah jenis olahraga yang dapat membantu meningkatkan
+                    fleksibilitas tubuh, mengurangi stres, dan meningkatkan
+                    kesehatan mental. Olahraga ini juga dapat membantu membakar
+                    kalori dan lemak tubuh.
+                  </p>
+                  <div class="link">
+                    <a href="">Selengkapnya</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- col end -->
+          </div>
+          <div class="btn-olahraga d-lg-none d-block text-center">
+            <button>Lihat Olahraga Lainnya</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- rekomendasi olahraga -->
+    <!-- kontak -->
+    <section class="kontak">
+      <div class="kontak-wrapper container mx-auto">
+        <div class="row align-items-center flex-lg-row flex-column">
+          <div class="col text text-lg-start text-center">
+            <h1>Hubungi Kami</h1>
+            <p>
+              Jangan ragu untuk menghubungi kami jika Anda memiliki pertanyaan
+              atau komentar
+            </p>
+          </div>
+          <div class="col pt-lg-0 pt-3">
+            <div
+              class="btn-kontak d-flex justify-content-lg-end justify-content-center"
+            >
+              <button>Hubungi Kami</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- kontak -->
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row footer-wrapper flex-lg-row flex-column">
+          <div class="col">
+            <img
+              src="https://i.ibb.co/FzRc6JC/logo-primary.png"
+              alt="logo-primary"
+              width="60%"
+            />
+            <p>
+              Setiap kita makan dan minum, kita dapat menentukan dunia seperti
+              apa yang kita inginkan
+            </p>
+            <div class="email">
+              <div class="icon">
+                <i class="bx bx-envelope"></i>
+              </div>
+              <a href="">info@dietcare.com</a>
+            </div>
+            <div class="phone">
+              <div class="icon">
+                <i class="bx bx-phone"></i>
+              </div>
+              <a href="">+6289 3456 7890</a>
+            </div>
+          </div>
+          <div class="col">
+            <h3>Layanan Kami</h3>
+            <ul class="d-flex flex-column gap-3">
+              <li><a href="">Diet Sehat</a></li>
+              <li><a href="">Edukasi</a></li>
+              <li><a href="">Rekomendasi Makanan</a></li>
+              <li><a href="">Rekomendasi Olahraga</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Support</h3>
+            <ul class="d-flex flex-column gap-3">
+              <li><a href="">Tentang DietCare</a></li>
+              <li><a href="">Kebijakan & Privasi</a></li>
+              <li><a href="">Hubungi Kami</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Langganan</h3>
+            <p>Berlangganan untuk mendapatkan info dari kami lebih cepat</p>
+            <div class="form-langganan d-flex">
+              <input
+                type="email"
+                placeholder="Email anda ..."
+                id="input-email-footer"
+              />
+              <input type="submit" value="Kirim" id="button-langganan" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ex-footer">
+        <div class="container">
+          <div
+            class="ex-footer-wrapper row align-items-center justify-content-between"
+          >
+            <div class="col sosmed">
+              <div class="icon d-flex gap-3 align-items-center pt-1">
+                <a href=""><i class="bx bxl-facebook-square"></i></a>
+                <a href=""><i class="bx bxl-instagram-alt"></i></a>
+                <a href=""><i class="bx bxl-twitter"></i></a>
+                <a href=""><i class="bx bxl-linkedin-square"></i></a>
+              </div>
+            </div>
+            <div class="col copyright">
+              <p>
+                Copyright © FE-37 & BE-19 - Diet Care 2023 | All right reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+    <!-- script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="home.js"></script>
+    <!-- script -->
+  </body>
+</html>
