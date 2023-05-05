@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>hitunng</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="hitung.css" />
+    <!-- icon -->
+    <!-- ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- ICON -->
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;600;700;800&family=Rubik:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font -->
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md py-2 position-fixed w-100">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="https://i.ibb.co/FzRc6JC/logo-primary.png"
+            alt="logo-primary"
+            width="100"
+        /></a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#btn-navbar"
+        >
+          <i class="bx bx-menu fs-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="btn-navbar">
+          <ul class="navbar-nav gap-lg-4 gap-3 mt-3 mt-md-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Diet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Edukasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div
+            class="col py-lg-0 py-3 sign d-flex justify-content-lg-end justify-content-start align-items-center gap-2"
+          >
+            <a href="">
+              <i class="bx bxs-user-circle" id="user"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
+    <!-- content -->
+    <!-- hitung -->
+    <section class="hitung py-5">
+      <div class="container">
+        <div class="hitung-wrapper">
+          <div class="row mx-auto hitung-content align-items-center">
+            <div class="col form text">
+              <div class="box-hitung d-flex justify-content-center flex-column">
+                <h1 class="mb-4">Hitung Kalori Anda</h1>
+                <form action="">
+                  <label>Usia:</label>
+                  <input type="number" id="usia" required /><br />
+                  Pilh Jenis Kelamin
+                  <select id="jenis-kelamin" required>
+                    <option value="laki-laki">Laki-laki</option>
+                    <option value="perempuan">Perempuan</option></select
+                  ><br />
+                  Tinggi Badan (cm):
+                  <input type="number" id="tinggi-badan" required /><br />
+                  Berat Badan (kg):
+                  <input type="number" id="berat-badan" required /><br />
+                  <button type="button" id="tombol">Hitung</button>
+                  <div id="warning"></div>
+                </form>
+                <div id="hasil"></div>
+                <div id="tombol-hasil"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hitung -->
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row footer-wrapper flex-lg-row flex-column">
+          <div class="col">
+            <img
+              src="https://i.ibb.co/FzRc6JC/logo-primary.png"
+              alt="logo-primary"
+              width="60%"
+            />
+            <p>
+              Setiap kita makan dan minum, kita dapat menentukan dunia seperti
+              apa yang kita inginkan
+            </p>
+            <div class="email">
+              <div class="icon">
+                <i class="bx bx-envelope"></i>
+              </div>
+              <a href="">info@dietcare.com</a>
+            </div>
+            <div class="phone">
+              <div class="icon">
+                <i class="bx bx-phone"></i>
+              </div>
+              <a href="">+6289 3456 7890</a>
+            </div>
+          </div>
+          <div class="col">
+            <h3>Layanan Kami</h3>
+            <ul class="d-flex flex-column gap-3">
+              <li><a href="">Diet Sehat</a></li>
+              <li><a href="">Edukasi</a></li>
+              <li><a href="">Rekomendasi Makanan</a></li>
+              <li><a href="">Rekomendasi Olahraga</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Support</h3>
+            <ul class="d-flex flex-column gap-3">
+              <li><a href="">Tentang DietCare</a></li>
+              <li><a href="">Kebijakan & Privasi</a></li>
+              <li><a href="">Hubungi Kami</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Langganan</h3>
+            <p>Berlangganan untuk mendapatkan info dari kami lebih cepat</p>
+            <div class="form-langganan d-flex">
+              <input
+                type="email"
+                placeholder="Email anda ..."
+                id="input-email-footer"
+              />
+              <input type="submit" value="Kirim" id="button-langganan" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ex-footer">
+        <div class="container">
+          <div
+            class="ex-footer-wrapper row align-items-center justify-content-between"
+          >
+            <div class="col sosmed">
+              <div class="icon d-flex gap-3 align-items-center pt-1">
+                <a href=""><i class="bx bxl-facebook-square"></i></a>
+                <a href=""><i class="bx bxl-instagram-alt"></i></a>
+                <a href=""><i class="bx bxl-twitter"></i></a>
+                <a href=""><i class="bx bxl-linkedin-square"></i></a>
+              </div>
+            </div>
+            <div class="col copyright">
+              <p>
+                Copyright © FE-37 & BE-19 - Diet Care 2023 | All right reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+    <!-- content -->
+
+    <!-- script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="hitung.js"></script>
+    <!-- script -->
+  </body>
+</html>
